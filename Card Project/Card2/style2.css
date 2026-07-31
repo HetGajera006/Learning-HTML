@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #8ec5fc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.card {
+    width: 350px;
+    min-height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Only the large top image */
+.topImage {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+#description {
+    width: 85%;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Complete plan box */
+#plan {
+    width: 82%;
+    min-height: 75px;
+    padding: 10px 14px;
+
+    background-color: #dceef7;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo and amount together */
+.planLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Circular image background */
+.imageBox {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+/* Only small logo */
+.imageBox img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.amountBox {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.planName {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+}
+
+.price {
+    font-size: 14px;
+    color: #555;
+}
+
+.rightBox a {
+    color: #3022ac;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#payment {
+    width: 82%;
+    height: 55px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgb(16, 16, 73);
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0 10px 15px;
+}
+
+#payment:hover {
+    background-color: rgb(28, 28, 110);
+}
+
+.cancelBox a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.cancelBox a:hover {
+    color: blue;
+}
