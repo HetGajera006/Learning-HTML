@@ -347,7 +347,7 @@ body{
 
 .testimonial-card {
     background-color: #F3EAE0;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #E6D8C8;
     border-radius: 15px;
 
@@ -456,7 +456,7 @@ body{
 
 
 /* =========================
-   STARS
+STARS
    ========================= */
 
 .stars {
@@ -471,6 +471,7 @@ body{
 
     .testimonial-container {
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 
 }
@@ -491,4 +492,674 @@ body{
     overflow: hidden;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.testimonial-card:hover{
+    /* transform: scale(1.1); */
+    /* transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(63, 56, 50, 0.18); */
+
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(63, 56, 50, 0.15);
+    border-color: brown;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   Add this at the END of coffee.css
+   ========================================= */
+
+
+/* =========================
+   TABLET - 850px
+   ========================= */
+
+@media (max-width: 850px) {
+
+    /* HEADER */
+    .header-container {
+        padding: 15px 25px;
+        align-items: center;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .order-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+
+    /* HERO SECTION */
+    .main-content {
+        margin-left: 80px;
+        margin-right: 40px;
+        max-width: 550px;
+    }
+
+    .best-line {
+        font-size: 2.3rem;
+    }
+
+    .description-line {
+        font-size: 1.1rem;
+    }
+
+
+    /* ABOUT SECTION */
+    .sliding-window {
+        gap: 30px;
+        padding: 0 30px;
+        align-items: center;
+    }
+
+    .Coffee-mug {
+        width: 45vw;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .image-description {
+        max-width: 450px;
+        gap: 20px;
+    }
+
+    .image-header {
+        font-size: 2rem;
+    }
+
+
+    /* WHY CHOOSE */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+
+    .Freshly-Roasted,
+    .Quality-Beans,
+    .Expertly-Crafted,
+    .Made-With-Love {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* POPULAR COFFEE */
+    .popular-coffee {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE - 600px
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* HEADER */
+    .header {
+        min-width: 0;
+        min-height: 500px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .Brand-logo {
+        height: 3.5rem;
+    }
+
+
+    /* NAVIGATION */
+    .nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .order-button {
+        padding: 8px 18px;
+    }
+
+
+    /* HERO */
+    .main-content {
+        margin: 45px 25px 0;
+        max-width: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    .best-line {
+        font-size: 2rem;
+    }
+
+    .description-line {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .explore-menu {
+        max-width: 160px;
+    }
+
+
+    /* ABOUT SECTION */
+    .sliding-window {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 25px;
+    }
+
+    .Coffee-mug {
+        width: 100%;
+        height: auto;
+        margin: 30px 0 0;
+        max-width: 500px;
+    }
+
+    .image-description {
+        margin-top: 0;
+        max-width: 100%;
+        gap: 18px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-us-image {
+        font-size: 1rem;
+    }
+
+    .image-header {
+        font-size: 1.8rem;
+    }
+
+    .text-under-line {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .lern-more {
+        margin-bottom: 10px;
+    }
+
+
+    /* SECTION TITLES */
+    .why-choose,
+    .popular-coffee-para,
+    .customer-thoghts {
+        font-size: 1rem;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+
+    /* WHY CHOOSE CARDS */
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+        gap: 20px;
+    }
+
+    .cards-item {
+        min-height: 190px;
+        padding: 25px;
+    }
+
+    .Freshly-Roasted,
+    .Quality-Beans,
+    .Expertly-Crafted,
+    .Made-With-Love {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* POPULAR COFFEE */
+    .popular-coffee {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+        gap: 25px;
+    }
+
+    .coffee-item {
+        min-height: 300px;
+    }
+
+    .cappuccino-popular,
+    .caffe-Latte-popular,
+    .Espresso-popular,
+    .Mocha-popular {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .coffee-title {
+        font-size: 1.4rem;
+    }
+
+    .coffee-description {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+
+    /* TESTIMONIALS */
+    .testimonial-section {
+        padding: 20px 15px 40px;
+    }
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .testimonial-card {
+        min-height: 180px;
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE - 400px
+   ========================= */
+
+@media (max-width: 400px) {
+
+    .header {
+        min-height: 520px;
+    }
+
+    .Brand-logo {
+        height: 3rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .order-button {
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+
+
+    /* HERO */
+    .main-content {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .best-line {
+        font-size: 1.7rem;
+    }
+
+    .description-line {
+        font-size: 0.9rem;
+    }
+
+
+    /* ABOUT */
+    .sliding-window {
+        padding: 0 18px;
+    }
+
+    .image-header {
+        font-size: 1.5rem;
+    }
+
+    .text-under-line {
+        font-size: 0.85rem;
+    }
+
+
+    /* CARDS */
+    .cards,
+    .popular-coffee {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .cards-item {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+
+    /* TESTIMONIAL */
+    .testimonial-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .testimonial-card {
+        padding: 18px;
+    }
+
+    .customer {
+        gap: 10px;
+    }
+
+    .customer img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .customer-info h3 {
+        font-size: 14px;
+    }
+
+}
+
+.news-letter{
+    width: 100%;
+    padding: 50px 30px;
+    background-color: var(--page-background);
+}
+
+.newsletter-content{
+    width: 100%;
+    max-width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 42% 58%;
+    background-color: #FFFDF9;
+    border: 1px solid #E6D8C8;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(63, 56, 50, 0.10);
+}
+
+.left-news{
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+.news-image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.left-news:hover .news-image {
+    transform: scale(1.05);
+}
+
+.right-news{
+    display: flex;
+    padding: 55px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-label{
+    color: var(--about-label);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.news-heading{
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.news-description{
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.news-description strong {
+    color: var(--about-label);
+}
+
+.news-form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 650px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.email-box{
+    flex: 1;
+    height: 55px;
+    align-items: center;
+    gap: 12px;
+    padding: 0 18px;
+    border: 2px solid #C9A27E;
+    border-radius: 10px;
+    background-color: #FFFDF9;
+}
+
+.email-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    color: #3F3832;
+}
+
+.email-box input::placeholder {
+    color: #8A7D73;
+    font-size: 1.1rem;
+    text-align: center;
+    /* justify-self: center; */
+    /* justify-content: center; */
+}
+
+.submit-button{
+    height: 55px;
+    padding: 0 28px;
+    background-color: var(--navbar-button);
+    color: white;
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    background-color: var(--navbar-button-hover);
+    transform: translateY(-2px);
+}
+
+.no-spam {
+    color: #756A61;
+    font-size: 0.8rem;
+}
+
+.footer-section{
+    margin-top: 70px;
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+    background-color: #352a20;
+    color: white;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.com-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.com-logo a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.com-logo a img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-right: 12px;
+}
+
+.com-logo a span:last-child{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-left: 67px;
+    margin-top: -15px;
+}
+
+.about-logo{
+    max-width: 300px;
+    margin-top: 20px;
+    color: #C8BDB4;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.socials a{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5A5049;
+    border-radius: 50%;
+    color: #D8CCC3;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.footer-grid h3{
+    margin-bottom: 8px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    color: var(--about-label);
+}
+
+.footer-grid a{
+    color: white;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.footer-grid a:hover{
+    color: var(--navbar-button-hover);
+    transform: translateX(4px);
+}
+
+.footer-copy-right{
+    grid-column: 1 / -1;
+    margin-top: 50px;
+    min-height: 70px;
+    border-top: 1px solid #3A332E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.footer-copy-right p{
+    color: #8F857E;
+    font-size: 0.8rem;
+}
+
+.back-to-top{
+    position: absolute;
+    right: 30px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--navbar-button);
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+
+.back-to-top:hover{
+    background-color: var(--navbar-button-hover);
+    transform: translateY(-4px);
 }
