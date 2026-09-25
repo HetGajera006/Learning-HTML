@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Countdown Timer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="countdown-card">
+
+            <div class="header">
+                <span class="badge">COUNTDOWN</span>
+
+                <h1>Countdown Timer</h1>
+
+                <p>
+                    Time remaining until your special event
+                </p>
+            </div>
+
+            <div class="countdown" id="countdown">
+
+                <div class="time-box">
+                    <span class="time" id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+
+                <div class="time-box">
+                    <span class="time" id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+
+                <div class="time-box">
+                    <span class="time" id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+
+                <div class="time-box seconds">
+                    <span class="time" id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+
+            </div>
+
+            <div class="progress-section">
+
+                <div class="progress-header">
+                    <span>Progress</span>
+                    <span id="progress-value">0%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <span>⏱ Time is running</span>
+                <span>Stay focused!</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
